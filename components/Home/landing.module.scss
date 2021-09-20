@@ -1,0 +1,50 @@
+@import "../../css/variables.module.scss";
+
+.landing {
+  min-height: 100vh;
+  max-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto 2.5rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #4bcdd8;
+  border-radius: 0.8rem;
+}
+
+.img_container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  z-index: -1;
+  background-color: red;
+  border-radius: 0.8rem;
+  display: none;
+}
+
+.landing article {
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  position: absolute;
+  top: 10rem;
+  left: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.8rem;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.landing h1,
+.landing h2 {
+  width: 18rem;
+}

@@ -1,0 +1,35 @@
+@import "../css/variables.module.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #000;
+  list-style: none;
+}
+
+a,
+button {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  @include button;
+}
