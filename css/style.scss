@@ -16,6 +16,7 @@ button {
   color: #fff;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -26,8 +27,17 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+p {
+  line-height: 1.7rem;
 }
 
 .btn {

@@ -1,10 +1,13 @@
+//colors
 $blue: #4bcdd8;
 $white: #fff;
 $dark: #222;
 $black: #000;
 
+//shadows
+
 @mixin shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.7);
 }
 
 @mixin flex_center {
@@ -18,22 +21,22 @@ $black: #000;
   text-transform: uppercase;
   color: $white;
   font-size: 1rem;
-  background-image: linear-gradient(to left, #4094af, #57c7d1, #4094af);
-  background-size: 200%;
+  background-image: linear-gradient(to bottom, #3ad4c2, #18a898);
+  //background-size: 200%;
   transition: 400ms;
-  background-position: left;
+  //  background-position: center;
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
   @include shadow;
 
-  &:active {
-    background-position: right;
+  /* &:active {
+    background-position: bottom;
   }
 
   @media (min-width: 40em) {
     &:hover {
-      background-position: right;
+      background-position: bottom;
     }
-  }
+  }*/
 }

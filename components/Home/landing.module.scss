@@ -1,50 +1,48 @@
 @import "../../css/variables.module.scss";
 
 .landing {
-  min-height: 100vh;
+  min-height: 70vh;
   max-width: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.img_container {
   position: relative;
-  top: 0;
-  left: 0;
-  margin: 0 auto 2.5rem;
-  width: 100%;
-  height: 100vh;
-  background-color: #4bcdd8;
-  border-radius: 0.8rem;
-}
 
-.img_container::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -1rem;
-  right: -1rem;
-  z-index: -1;
-  background-color: red;
-  border-radius: 0.8rem;
-  display: none;
-}
+  .img_container {
+    position: absolute;
+    top: 2.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 18rem;
+    background-color: #4bcdd8;
+    border-radius: 0.8rem;
+  }
 
-.landing article {
-  margin: 0 auto;
-  padding: 3rem 1rem;
-  position: absolute;
-  top: 10rem;
-  left: 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 0.8rem;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
-}
+  article {
+    margin: 0 auto;
+    padding: 1.2rem 1rem 3.5rem;
+    position: absolute;
+    bottom: -2rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0.8rem;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    @include shadow;
 
-.landing h1,
-.landing h2 {
-  width: 18rem;
+    h1,
+    p {
+      width: 17rem;
+      text-align: center;
+    }
+
+    button {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
 }
